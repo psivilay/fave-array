@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Favorite Things</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>What are your favorite things?</h1>
+
+      <form id="fave-things">
+        <h3>Who is your favorite superhero?</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="hero" value="Batman">
+            Batman
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="hero" value="Spiderman">
+            Spiderman
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="hero" value="Wonder Woman">
+            Wonder Woman
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="hero" value="Black Widow">
+            Black Widow
+          </label>
+        </div>
+
+        <h3>What is your favorite color?</h3>
+        <div class="form-group">
+          <label for="color"></label>
+          <input id="color" class="form-control" type="color">
+        </div>
+
+        <h3>What is your favorite season?</h3>
+        <select class="form-control" id="season">
+          <option value="spring">Spring</option>
+          <option value="summer">Summer</option>
+          <option value="fall">Fall</option>
+          <option value="winter">Winter</option>
+          <option value="gilmore">Season 8 of Gilmore Girls</option>
+        </select>
+
+        <h3>What is your favorite food?</h3>
+        <div class="form-group">
+          <input id="food" class="form-control" type="text">
+        </div>
+
+        <button class="btn" type="submit">Submit!</button>
+      </form>
+
+        <h2>Here are your favorite things:</h2>
+        <ul>
+          <li id="output"></li>
+        </ul>
+    </div>
+  </body>
+</html>
