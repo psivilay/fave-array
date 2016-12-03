@@ -14,29 +14,9 @@
 
       <form id="fave-things">
         <h3>Who is your favorite superhero?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="hero" value="Batman">
-            Batman
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="hero" value="Spiderman">
-            Spiderman
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="hero" value="Wonder Woman">
-            Wonder Woman
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="hero" value="Black Widow">
-            Black Widow
-          </label>
+        <div class="form-group">
+          <label for="hero"></label>
+          <input id="hero" class="form-control" type="text">
         </div>
 
         <h3>What is your favorite color?</h3>
@@ -47,11 +27,11 @@
 
         <h3>What is your favorite season?</h3>
         <select class="form-control" id="season">
-          <option value="spring">Spring</option>
-          <option value="summer">Summer</option>
-          <option value="fall">Fall</option>
-          <option value="winter">Winter</option>
-          <option value="gilmore">Season 8 of Gilmore Girls</option>
+          <option value="Spring">Spring</option>
+          <option value="Summer">Summer</option>
+          <option value="Fall">Fall</option>
+          <option value="Winter">Winter</option>
+          <option value="Gilmore Girls Season 8">Season 8 of Gilmore Girls</option>
         </select>
 
         <h3>What is your favorite food?</h3>
@@ -64,7 +44,10 @@
 
         <h2>Here are your favorite things:</h2>
         <ul>
-          <li id="output"></li>
+          <li class="hero"></li>
+          <li class="color"></li>
+          <li class="season"></li>
+          <li class="food"></li>
         </ul>
     </div>
   </body>
