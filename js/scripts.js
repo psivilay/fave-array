@@ -16,12 +16,16 @@ $(document).ready(function() {
     newArray.push(userFaves[2]);
     newArray.push(userFaves[3]);
 
-    newArray.forEach(function(userFave) {
-      var userInput = $("#" + userFave).val();
-//Everything works up until below:
-      $("." + userFave).text(userInput);
+    //newArray.forEach(function(userFave) {
+      //var userInput = $("#" + userFave).val();
+      //$("." + userFave).text(userInput);
 
-    });
+    //});
+
+    for (var index = 0; index < newArray.length; index += 1) {
+      var userInput = $("#" + newArray[index]).val();
+      $("." + newArray[index]).text(userInput);
+    }
 
     $("ul").show();
 
